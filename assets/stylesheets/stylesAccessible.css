@@ -1,0 +1,32 @@
+a {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-size: 150%;
+}
+
+button {
+    width: 200px;
+    height: 75px;
+    background-color: black;
+    color: white;
+    font-size: 150%;
+}
+
+input {
+    width: 50%;
+    padding: 10px 0;
+}
+
+input[type="submit"] {
+    width: 250px;
+    height: 75px;
+    background-color: black;
+    color: white;
+    font-size: 125%;
+}

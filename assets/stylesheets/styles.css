@@ -1,0 +1,844 @@
+/* site wide settings */
+* {
+    margin: 0;
+    /* border: 2px solid red; */
+}
+
+body {
+    max-width: 100%;
+    font-family: "Helvetica, Arial", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* main containers */
+.wide-page-container,
+.header-footer-container,.upcoming-talks-container,
+.past-talks-container {
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.wide-page-container {
+    width: 100%;
+    padding: 2vh 5vw 2vh 5vw;
+}
+
+.narrow-page-container {
+    width: auto;
+    padding: 5vh 0 5vh 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.other-page-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1400px;
+    box-sizing: border-box;
+    padding: 2vh 2vw 2vh 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media screen and (max-width: 1399px) {
+    .other-page-container {
+        padding: 2vh 5vw 2vh 5vw;
+    }
+}
+
+.header-footer-container {
+    background-color: #df4213;
+    display: flex;
+    align-items: center;
+}
+
+.upcoming-talks-container {
+    background-color: #f4c0b0;
+}
+
+@media screen and (max-width: 1399px) {
+    .upcoming-talks-container {
+        padding: 3vh 5vw 3vh 5vw;
+    }
+}
+
+.register-container {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f4c0b0;
+    padding: 2vh 5vw 2vh 5vw;
+    display: flex;
+    align-items: center;
+}
+
+.event-details-container {
+    margin: auto;
+    padding: 3vh 2vw 3vh 2vw;
+    width: 100%;
+    max-width: 1400px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+@media screen and (max-width: 1399px) {
+    .event-details-container {
+        padding: 2vh 5vw 2vh 5vw;
+    }
+}
+
+.alternative-talks-container {
+    margin: auto;
+    padding: 2vh 2vw 2vh 2vw;
+    width: 100%;
+    max-width: 1400px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media screen and (max-width: 1399px) {
+    .alternative-talks-container {
+        padding: 2vh 5vw 2vh 5vw;
+    }
+}
+
+.wireframes-container {
+    display: flex;
+    gap: 20px;
+}
+
+.wireframes-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.wireframes-column img {
+    width: 100%;
+    height: auto;
+}
+
+/* font settings */
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-size: 1.10rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.hero-event-description {
+    font-size: 1.2rem;
+}
+
+.alternative-talks-item-container h5, .event-booking h2,
+#booking-talk-title, #booking-talk-date,
+.event-description, .hero-event-description,
+.event-date, #booking-talk-date, #hero-event-date, .other-page-subtitle,
+.booking-item li, .my-details-labels, .wireframes-container h3 {
+    font-weight: lighter;
+}
+
+.event-date, #booking-talk-date, #hero-event-date {
+    font-style: italic;
+}
+
+#hero-event-date {
+    margin: 0 auto 0 0;
+    background-color: #f1f1f1;
+}
+
+.talk-item-date {
+    font-style: italic;
+}
+
+textarea::placeholder {
+    font-family: "Helvetica, Arial", sans-serif;
+    font-size: 1rem;
+}
+
+/* list shared settings */
+ul {
+    list-style: none;
+}
+
+/* header settings */
+header {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1400px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    box-sizing: border-box;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 1399px) {
+    header {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+}
+
+.login, .register {
+    color: white;
+}
+
+.logo {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.navigation {
+    margin-left: auto;
+}
+
+header > nav {
+    height: 100%;
+    margin-left: auto;
+}
+
+header > nav > ul {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+header > nav > ul > li {
+    margin-left: 12px;
+    align-items: center;
+}
+
+/* footer settings */
+footer {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 1vh 2vw 1vh 2vw;
+    box-sizing: border-box;
+    height: 160px;
+    display: flex;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 1399px) {
+    footer {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+}
+
+.footer-logo {
+    margin: 1vw auto auto auto;
+    flex-grow: 1;
+}
+
+.footer-logo a, .footer-details > div > h4 {
+    color: white;
+}
+
+.footer-details {
+    margin: 1vw auto 1vw auto;
+    display: flex;
+}
+
+.footer-details p {
+    font-weight: lighter;
+}
+
+.footer-details * {
+    color: white;
+}
+
+.footer-details > div {
+    margin-left: 40px;
+}
+
+.footer-details a:hover, .footer-logo a:hover {
+    color: #f4c0b0;
+}
+
+.address-details {
+    margin-top: 5px;
+}
+
+.social-media-logo-container {
+    margin-top: 5px;
+    display: flex;
+    gap: 5px;
+}
+
+.social-media-logo-container a, .social-media-logo-container img {
+    max-width: 30px;
+}
+
+/* main settings */
+main {
+    width: 100%;
+    padding: 0;
+    /* calculate min-height so main is always full screen height minus header and footer height */
+    min-height: calc(100vh - 80px - 160px);
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-row {
+    max-width: 100%;
+    height: 600px;
+    display: flex;
+}
+
+.hero-text-container {
+    width: 50%;
+    max-height: 100%;
+    padding: 8vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media screen and (max-width: 1399px) {
+    .hero-text-container {
+        padding: 5vw;
+    }
+}
+
+.hero-text-container h2 {
+    font-weight: 300;
+}
+
+.hero-call-to-action {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+}
+/*
+.hero-call-to-action a {
+    width: 150px;
+    display: flex;
+    align-items: center;
+}
+*/
+.button-link {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    background-color: #df4213;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: 5px 5px 3px #5f5f5f;
+    z-index: 100;
+}
+
+.button-link p {
+    margin: auto;
+}
+
+.hero-call-to-action > p {
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+.hero-image-container {
+    min-width: 50%;
+    overflow: hidden;
+}
+
+.hero-image-container img {
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.upcoming-talks-section {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 3vh 2vw 3vh 2vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.upcoming-talks-grid {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px 10px;
+}
+
+.talk-item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.talk-image-link {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.talk-item img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.booking-list {
+    margin-top: 1rem;
+    /* margin-bottom: 2rem;*/
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.booking-item, .booking-item-header {
+    width: 100%;
+}
+
+.booking-item ul, .booking-item-header ul {
+    margin-left: 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    background-color: #f1f1f1;
+}
+
+.booking-details-title {
+    width: 180px;
+    max-width: 180px;
+}
+
+.booking-details-date {
+    width: 150px;
+    max-width: 150px;
+}
+
+.booking-details-people {
+    width: 50px;
+    max-width: 50px;
+}
+
+.booking-details-cost {
+    width: 50px;
+    max-width: 50px;
+}
+
+.booking-details-id {
+    width: 20px;
+    max-width: 20px;
+}
+
+.booking-item li:not(:last-child), .booking-item-header li:not(:last-child) {
+    border-right: 1px solid #5f5f5f;
+    padding-right: 0.5rem;
+}
+
+#user-details {
+    margin-left: 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    background-color: #f1f1f1;
+}
+
+
+.centered-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centered-button a {
+    margin: 10px auto 10px auto;
+    border: none;
+}
+
+/* all styles for buttons could be consolidated in a single selector button */
+button, .form-button {
+    margin: 20px auto;
+    cursor: pointer;
+    background-color: #df4213;
+    border: none;
+    color: white;
+}
+
+button:hover {
+    background-color: rgba(213, 51, 1, 0.51);
+    transition: background-color 0.5s ease;
+}
+
+.centered-button button {
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: 5px 5px 3px #5f5f5f;
+    z-index: 100;
+}
+
+.all-talks-grid {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px 10px;
+}
+
+/* past talks section */
+.past-talks-section {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 3vh 2vw 3vh 2vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media screen and (max-width: 1399px) {
+    .past-talks-section {
+        padding: 3vh 5vw 3vh 5vw;
+    }
+}
+
+.past-talks-gallery {
+    display: flex;
+    gap: 10px;
+}
+
+/* register section */
+.register-section {
+    padding: 2vw 5vw 2vw 5vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.register-section h3 {
+    font-style: italic;
+    font-weight: lighter;
+}
+
+/* event details page */
+.event-details-content {
+    max-width: 100%;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.event-details-image-container {
+    max-width: 100%;
+    max-height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.event-details-image-container > img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.event-details-title {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0.1rem 0.5rem;
+    background-color: rgba(240, 240, 240, 0.50);
+    z-index: 100;
+}
+
+.event-booking-container {
+    flex: 1;
+    background-color: #f4c0b0;
+    padding: 40px;
+}
+
+.event-booking {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.event-booking > form {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-feedback {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-feedback li {
+    font-weight: lighter;
+}
+
+.alternative-talks-item-container {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.mini-talk-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.mini-talk-item > img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/* form pads (login, register, book forms) settings */
+.form-pad {
+    width: 400px;
+    box-sizing: border-box;
+    background-color: #f4c0b0;
+    padding: 40px 60px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-pad-title {
+    margin: 1rem;
+}
+
+form > label {
+    margin: auto auto auto 0;
+}
+
+form {
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+form > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+form > textarea {
+    width: 100%;
+}
+
+.non-member-note {
+    padding: 1rem;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.non-member-note a {
+    color: #df4213;
+}
+
+input {
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 10px 0;
+}
+
+.form-button {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #df4213;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: 5px 5px 3px #5f5f5f;
+}
+
+.form-button:hover {
+    background-color: rgba(213, 51, 1, 0.51);
+    transition: background-color 0.5s ease;
+}
+
+/* select is superseded - no longer used
+form > select {
+    width: 100%;
+    background-color: #f1f1f1;
+    border: none;
+    outline: none;
+}
+
+input[type="submit"] {
+    margin: 10px auto 10px auto;
+    background-color: #df4213;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: 5px 5px 3px #5f5f5f;
+    z-index: 100;
+}
+*/
+
+/* credits page settings */
+.credits-details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.credits-details-container div {
+    margin: 10px 0;
+}
+
+
+.credits-details-container ul {
+    margin-top: 10px;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.credits-details-container li {
+    display: flex;
+    flex-direction: column;
+}
+
+.credits-details-container a {
+    color: #df4213;
+}
+
+.citation-italics {
+    font-style: italic;
+}
+
+/* links */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+.navigation li {
+    color: white;
+    font-weight: lighter;
+}
+
+.navigation a {
+    color: white;
+}
+
+.navigation a:hover {
+    color: #f4c0b0;
+}
+
+.logo a {
+    color: white;
+}
+
+.logo a:hover {
+    color: #f4c0b0;
+}
+
+.talk-link {
+    color: black;
+}
+
+.talk-link:hover {
+    color: dimgrey;
+}
+
+.talk-link h5 {
+    font-weight: 400;
+}
+
+.talk-image-link:hover {
+    filter: brightness(75%);
+    transition: 0.5s ease;
+}
+
+/* media queries */
+/* is it possible to have a media query for shorter screens? */
