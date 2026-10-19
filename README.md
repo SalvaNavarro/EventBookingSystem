@@ -8,7 +8,7 @@ Developed as part of the MSc Computer Science with Artificial Intelligence at No
 ## App preview
 
 <p align="center">
-  <img src="preview01.gif" width="800">
+  <img src="preview.gif" width="800">
 </p>
 
 ## Key Features
