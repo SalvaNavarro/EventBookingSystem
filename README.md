@@ -5,6 +5,12 @@ A full-stack event booking application developed using **PHP, MySQL, HTML, CSS a
 
 Developed as part of the MSc Computer Science with Artificial Intelligence at Northumbria University.
 
+## App preview
+
+<p align="center">
+  <img src="preview01.gif" width="800">
+</p>
+
 ## Key Features
 
 - **User Authentication:** Account registration, login and logout with secure password hashing and verification.
